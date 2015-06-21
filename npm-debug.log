@@ -1,0 +1,41 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node',
+1 verbose cli   '/Users/nevda/.nvm/versions/node/v0.12.4/bin/npm',
+1 verbose cli   'dist-tag',
+1 verbose cli   'remove',
+1 verbose cli   'latest' ]
+2 info using npm@2.11.3
+3 info using node@v0.12.4
+4 verbose dist-tag del undefined 'from' 'latest'
+5 silly mapToRegistry name latest
+6 silly mapToRegistry using default registry
+7 silly mapToRegistry registry https://registry.npmjs.org/
+8 silly mapToRegistry uri https://registry.npmjs.org/latest
+9 verbose request uri https://registry.npmjs.org/-/package/latest/dist-tags
+10 verbose request no auth needed
+11 info attempt registry request try #1 at 6:17:57 PM
+12 verbose request using bearer token for auth
+13 verbose request id 71d9d49254ea2e4b
+14 http request GET https://registry.npmjs.org/-/package/latest/dist-tags
+15 http 200 https://registry.npmjs.org/-/package/latest/dist-tags
+16 info dist-tag del undefined 'is not a dist-tag on' 'latest'
+17 verbose stack Error: undefined is not a dist-tag on latest
+17 verbose stack     at /Users/nevda/.nvm/versions/node/v0.12.4/lib/node_modules/npm/lib/dist-tag.js:91:17
+17 verbose stack     at /Users/nevda/.nvm/versions/node/v0.12.4/lib/node_modules/npm/lib/dist-tag.js:148:7
+17 verbose stack     at /Users/nevda/.nvm/versions/node/v0.12.4/lib/node_modules/npm/node_modules/npm-registry-client/lib/dist-tags/fetch.js:35:5
+17 verbose stack     at /Users/nevda/.nvm/versions/node/v0.12.4/lib/node_modules/npm/lib/cache/caching-client.js:52:8
+17 verbose stack     at f (/Users/nevda/.nvm/versions/node/v0.12.4/lib/node_modules/npm/node_modules/once/once.js:17:25)
+17 verbose stack     at /Users/nevda/.nvm/versions/node/v0.12.4/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:68:16
+17 verbose stack     at f (/Users/nevda/.nvm/versions/node/v0.12.4/lib/node_modules/npm/node_modules/once/once.js:17:25)
+17 verbose stack     at CachingRegistryClient.<anonymous> (/Users/nevda/.nvm/versions/node/v0.12.4/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:255:12)
+17 verbose stack     at Request._callback (/Users/nevda/.nvm/versions/node/v0.12.4/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:170:14)
+17 verbose stack     at Request.self.callback (/Users/nevda/.nvm/versions/node/v0.12.4/lib/node_modules/npm/node_modules/request/request.js:354:22)
+18 verbose cwd /Users/nevda/trunk/npm-reg
+19 error Darwin 14.3.0
+20 error argv "node" "/Users/nevda/.nvm/versions/node/v0.12.4/bin/npm" "dist-tag" "remove" "latest"
+21 error node v0.12.4
+22 error npm  v2.11.3
+23 error undefined is not a dist-tag on latest
+24 error If you need help, you may report this error at:
+24 error     <https://github.com/npm/npm/issues>
+25 verbose exit [ 1, true ]
